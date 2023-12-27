@@ -36,5 +36,5 @@ form.addEventListener('submit', evt => {
 
 
 function goToRegister() {
-    location.href = '/register';
+    location.href = '/api/views/register';
 }
