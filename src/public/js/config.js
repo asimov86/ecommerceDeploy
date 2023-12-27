@@ -2,6 +2,7 @@ const {config} = require('dotenv');
 
 config();
 const PORT = process.env.PORT || 8080;
+const RAILWAY_DOMAIN = process.env.RAILWAY_DOMAIN;
 const MONGODB_URI = process.env.MONGODB_URI;
 const CLIENTE_ID_GITHUB = process.env.CLIENTE_ID_GITHUB;
 const CLIENT_SECRET_GITHUB = process.env.CLIENT_SECRET_GITHUB;

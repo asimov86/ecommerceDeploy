@@ -1,39 +1,5 @@
 
 
-/* function functionLogout(){
-    fetch('/api/sessions/logout')
-    .then(result=> result.status)
-    .then(status=>{
-        location.assign("/api/views/login");
-      });
-    
-}; */
-
-/* function functionLogout() {
-  const userIdValue = document.getElementById('userId').innerText;
-
-  const response = await fetch('/api/sessions/logout', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ userId: userIdValue })
-  })
-  .then(response => {
-    console.log('Response:', response);
-    console.log('Status:', response.status);
-    return response.json();
-})
-.then(data => {
-    console.log('Data:', data);
-    location.assign("/api/views/login");
-})
-.catch(error => {
-    console.error('Error:', error);
-});
-
-} */
-
 // Utilizando un evento de escucha de clic para el logout
 const logoutButton = document.getElementById('logoutButton');
 logoutButton.addEventListener('click', async () => {

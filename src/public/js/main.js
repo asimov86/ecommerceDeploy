@@ -6,7 +6,7 @@ const limit = document.getElementById('limit');
 const sort = document.getElementById('sort');
 const newProduct = document.getElementById('newProduct');
 const errorElement = document.getElementById('error-message');
-
+const { RAILWAY_DOMAIN} = require('../../public/js/config');
 const userValue = userID.value;
 addProduct.addEventListener('submit', e => {
     e.preventDefault()
@@ -137,7 +137,7 @@ addProductToCart = async (pid) => {
     };
  
     const response = await fetch(
-     `http://localhost:3000/api/carts/${cid}/products/${pid}`,
+     `https://${RAILWAY_DOMAIN}/api/carts/${cid}/products/${pid}`,
      options
     )
     if (response.ok) {
@@ -172,7 +172,7 @@ addProductToCart = async (pid) => {
     };
  
     await fetch(
-     `http://localhost:3000/api/carts/${cid}/products/${pid}`,
+     `https://${RAILWAY_DOMAIN}/api/carts/${cid}/products/${pid}`,
      options
     )
  }

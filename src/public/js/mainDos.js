@@ -1,4 +1,4 @@
-
+const { RAILWAY_DOMAIN} = require('../../public/js/config');
 const addProduct = document.getElementById('addProduct');
 const errorElement = document.getElementById('error-message');
 
@@ -15,7 +15,7 @@ addProductToCart = async (pid) => {
     };
  
     const response = await fetch(
-        `http://localhost:3000/api/carts/${cid}/products/${pid}`,
+        `https://${RAILWAY_DOMAIN}/api/carts/${cid}/products/${pid}`,
         options
        )
    
@@ -52,7 +52,7 @@ addProductToCart = async (pid) => {
     };
  
     await fetch(
-     `http://localhost:3000/api/carts/${cid}/products/${pid}`,
+     `https://${RAILWAY_DOMAIN}/api/carts/${cid}/products/${pid}`,
      options
     )
  }
@@ -69,7 +69,7 @@ addProductToCart = async (pid) => {
         
     }
     const response = await fetch(
-        `http://localhost:3000/api/carts/${cid}/purchase`,
+        `https://${RAILWAY_DOMAIN}/api/carts/${cid}/purchase`,
         options
        )
     if (response.ok) {
