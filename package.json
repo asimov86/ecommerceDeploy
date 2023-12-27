@@ -6,6 +6,10 @@
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asimov86/ecommerceDeploy.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -43,5 +47,9 @@
     "mocha": "^10.2.0",
     "supertest": "^6.3.3"
   },
-  "description": "Deploy del proyecto final del curso de backend de CoderHouse."
+  "description": "Deploy del proyecto final del curso de backend de CoderHouse.",
+  "bugs": {
+    "url": "https://github.com/asimov86/ecommerceDeploy/issues"
+  },
+  "homepage": "https://github.com/asimov86/ecommerceDeploy#readme"
 }
