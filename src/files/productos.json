@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Hamburguesa Simple",
+    "description": "Hamburguesa simple con queso, tomate, cebolla, lechuga, pepinillos y papas fritas.",
+    "product": "Hamburguesa",
+    "price": 980,
+    "thumbnail": "https://i0.wp.com/www.opportimes.com/wp-content/uploads/2016/04/haburguesa-dos.png?resize=500%2C387&ssl=1",
+    "code": "2A32F3212",
+    "stock": 85
+  },
+  {
+    "id": 2,
+    "title": "Hamburguesa Doble",
+    "description": "Hamburguesa doble carne, doble queso, tomate, cebolla, lechuga, pepinillos y papas fritas.",
+    "product": "Hamburguesa",
+    "price": 1080,
+    "thumbnail": "https://st4.depositphotos.com/1328914/20814/i/600/depositphotos_208145482-stock-photo-double-cheeseburger-with-lettuce-tomato.jpg",
+    "code": "2A32F3214",
+    "stock": 28
+  },
+  {
+    "id": 3,
+    "title": "Coca Cola",
+    "description": "Bebida Coca Cola de lata 355 ml.",
+    "product": "Bebida",
+    "price": 980,
+    "thumbnail": "https://i0.wp.com/www.opportimes.com/wp-content/uploads/2016/04/haburguesa-dos.png?resize=500%2C387&ssl=1",
+    "code": "2A32F3226",
+    "stock": 120
+  },
+  {
+    "title": "Hamburguesa Triple",
+    "description": "Hamburguesa triple con queso, tomate, cebolla, lechuga, pepinillos y papas fritas.",
+    "product": "Hamburguesa",
+    "price": 1780,
+    "thumbnail": "https://i0.wp.com/www.opportimes.com/wp-content/uploads/2016/04/haburguesa-dos.png?resize=500%2C387&ssl=1",
+    "code": "2A32F3228",
+    "stock": 189,
+    "id": 4
+  },
+  {
+    "id": 5,
+    "title": "Hamburguesa cuadruple",
+    "description": "Hamburguesa cuadruple con queso, tomate, cebolla, lechuga, pepinillos y papas fritas.",
+    "product": "Hamburguesa",
+    "price": 1580,
+    "thumbnail": "https://i0.wp.com/www.opportimes.com/wp-content/uploads/2016/04/haburguesa-dos.png?resize=500%2C387&ssl=1",
+    "code": "2A32F3230",
+    "stock": 98
+  },
+  {
+    "id": 6,
+    "title": "Hamburguesa de pollo",
+    "description": "Hamburguesa de pollo con queso, tomate, cebolla, lechuga, pepinillos y papas fritas.",
+    "product": "Hamburguesa",
+    "price": 1180,
+    "thumbnail": "https://i0.wp.com/www.opportimes.com/wp-content/uploads/2016/04/haburguesa-dos.png?resize=500%2C387&ssl=1",
+    "code": "2A32F3231",
+    "stock": 83
+  }
+]

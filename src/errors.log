@@ -1,0 +1,235 @@
+error: undefined
+error: undefined {"kind":"ObjectId","path":"_id","reason":{},"stringValue":"\"mockusers\"","value":"mockusers","valueType":"string"}
+error: Error adding product to cart:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: Producto sin existencia
+error: Error: Producto sin existencia
+error: Error: Producto sin existencia
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: Error: Producto sin existencia
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: Producto sin existencia
+error: Error: Producto sin existencia
+error: Error: Producto sin existencia
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: Error: El carrito no existe.
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: No se puede continuar la compra. Producto con stock insuficiente.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: Error al obtener data del token. Se redirigirá para volver a resetear la contraseña.
+error: undefined
+error: undefined {"kind":"string","path":"email","reason":null,"stringValue":"\"{ email: 'kennyjosue8@gmail.com' }\"","value":{"email":"kennyjosue8@gmail.com"},"valueType":"Object"}
+error: Error al actualizar el producto: req is not defined {"stack":"ReferenceError: req is not defined\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:62:13)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:25:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:42:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: Error al actualizar el producto: req is not defined {"stack":"ReferenceError: req is not defined\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:62:13)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:25:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:42:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: Error al actualizar el producto: req is not defined {"stack":"ReferenceError: req is not defined\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:62:13)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:25:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:42:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: Error al actualizar el producto: Cannot read properties of undefined (reading 'error') {"stack":"TypeError: Cannot read properties of undefined (reading 'error')\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:62:25)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:25:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:42:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: Error al actualizar el producto: error is not defined {"stack":"ReferenceError: error is not defined\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:48:23)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:25:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:42:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: Error al actualizar el producto: All fields are required. {"code":13003,"stack":"Error: All fields are required.\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:42:31)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:25:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:42:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: Error al actualizar el producto: All fields are required. {"code":13003,"stack":"Error: All fields are required.\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:42:31)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:24:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:42:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined {"kind":"ObjectId","path":"_id","reason":{},"stringValue":"\"65628c7c1ab02e6db7613bbg\"","value":"65628c7c1ab02e6db7613bbg","valueType":"string"}
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: El usuario no existe.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error al eliminar el producto: product is not defined {"stack":"ReferenceError: product is not defined\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:44:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: Cannot read properties of undefined (reading 'owner') {"stack":"TypeError: Cannot read properties of undefined (reading 'owner')\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:45:37)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: Cannot read properties of undefined (reading 'owner') {"stack":"TypeError: Cannot read properties of undefined (reading 'owner')\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:45:37)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: req is not defined {"stack":"ReferenceError: req is not defined\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:55:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15001,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:56:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al actualizar el producto: E11000 duplicate key error collection: ecommerce55310.products index: title_1 dup key: { title: "Aflan" } {"code":11000,"index":0,"keyPattern":{"title":1},"keyValue":{"title":"Aflan"},"stack":"MongoServerError: E11000 duplicate key error collection: ecommerce55310.products index: title_1 dup key: { title: \"Aflan\" }\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:50:33\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\command.js:84:64\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al eliminar el producto: Error al buscar el owner del producto para eliminar. {"code":15001,"stack":"Error: Error al buscar el owner del producto para eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:50:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: Error al buscar el owner del producto para eliminar. {"code":15001,"stack":"Error: Error al buscar el owner del producto para eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:50:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: Error al buscar el owner del producto para eliminar. {"code":15001,"stack":"Error: Error al buscar el owner del producto para eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:50:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: console.lof is not a function {"stack":"TypeError: console.lof is not a function\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:46:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: Error al buscar el owner del producto para eliminar. {"code":15001,"stack":"Error: Error al buscar el owner del producto para eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:51:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: Error al buscar el owner del producto para eliminar. {"code":15001,"stack":"Error: Error al buscar el owner del producto para eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:52:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:58:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:58:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:58:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:58:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:61:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:61:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:61:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:62:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:63:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:63:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:63:43)"}
+error: Error al eliminar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:65:98)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al eliminar el producto: Cannot read properties of undefined (reading 'info') {"stack":"TypeError: Cannot read properties of undefined (reading 'info')\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:69:33)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al eliminar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:69:95)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al eliminar el producto: updatedProducts is not defined {"stack":"ReferenceError: updatedProducts is not defined\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:71:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:44:100)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:44:100)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:44:100)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: E11000 duplicate key error collection: ecommerce55310.products index: title_1 dup key: { title: "ObjetoPrueba" } {"code":11000,"index":0,"keyPattern":{"title":1},"keyValue":{"title":"ObjetoPrueba"},"stack":"MongoServerError: E11000 duplicate key error collection: ecommerce55310.products index: title_1 dup key: { title: \"ObjetoPrueba\" }\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:50:33\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\command.js:84:64\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:44:100)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:44:100)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:44:100)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: E11000 duplicate key error collection: ecommerce55310.products index: title_1 dup key: { title: "Coca Cola" } {"code":11000,"index":0,"keyPattern":{"title":1},"keyValue":{"title":"Coca Cola"},"stack":"MongoServerError: E11000 duplicate key error collection: ecommerce55310.products index: title_1 dup key: { title: \"Coca Cola\" }\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\insert.js:50:33\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\operations\\command.js:84:64\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:44:100)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: Cannot access 'customQuery' before initialization {"stack":"ReferenceError: Cannot access 'customQuery' before initialization\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:45:100)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error al actualizar el producto: All fields are required. {"code":13003,"stack":"Error: All fields are required.\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:42:31)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:26:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:43:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: Error al actualizar el producto: All fields are required. {"code":13003,"stack":"Error: All fields are required.\n    at ProductsDao.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\DAOs\\dbManagers\\ProductsDao.js:42:31)\n    at Object.insertOne (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:26:25)\n    at Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:43:66)\n    at Socket.emit (node:events:513:28)\n    at Socket.emitUntyped (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\typed-events.js:69:22)\n    at C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\node_modules\\socket.io\\dist\\socket.js:704:39\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+error: Error al eliminar el producto: El usuario actual no es owner del producto, no se puede eliminar. {"code":15002,"stack":"Error: El usuario actual no es owner del producto, no se puede eliminar.\n    at Object.deleteById (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\services\\service.products.js:63:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Socket.<anonymous> (C:\\Users\\Ryzen3\\Documents\\GitHub\\prog_backend_55310\\clase37\\src\\socketConfig.js:62:43)"}
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: El usuario no puede adquirir el producto.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Error: Error creating Cart.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: Producto sin owner
+error: Error: Producto sin owner
+error: Error: Carrito sin usuario asociado.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: The supplied cart does not exist.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: No se pudo eliminar el carrito.
+error: No se pudo eliminar productos del carrito.
+error: Otro tipo de error:
+error: No se pudo eliminar productos del carrito.
+error: No se pudo eliminar productos del carrito.
+error: No se pudo eliminar productos del carrito.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: The supplied cart does not exist.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Error: The product could not be inserted.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: The product could not be updated.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: The product could not be deleted.
+error: Error: The product could not be deleted.
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Otro tipo de error:
+error: Error: El usuario no ha cargado todos los documentos requeridos.
+error: Otro tipo de error:
+error: Error: El usuario no ha cargado todos los documentos requeridos.
+error: Error: El usuario no ha cargado todos los documentos requeridos.
+error: Error: El usuario no ha cargado todos los documentos requeridos.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.
+error: Error: El usuario no ha cargado todos los documentos requeridos para ser usuario premium.

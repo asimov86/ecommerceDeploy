@@ -1,0 +1,105 @@
+<style>
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+</style>
+
+<div class="container mt-2">
+    <div style="display: none"><input id="userId" name="userId" type="hydden" value="{{id}}"></div>
+    <div style="display: none"><input id="currentPage" name="currentPage" type="hydden" value="{{page}}"></div>
+    <div style="display: none"><input id="limit" name="limit" type="hydden" value="{{limit}}"></div>
+    <div style="display: none"><input id="sort" name="sort" type="hydden" value="{{sort}}"></div>
+    <div style="display: none"><input id="newProducts" name="newProducts" type="hydden" value="{{newProduct}}"></div>
+    <div class="jumbotron">
+        <h1>Ingrese un producto</h1>
+        <br>
+
+        <form id="addProduct">
+            <div class="form-group">
+                <label for="title">Titulo</label>
+                <input id="title" class="form-control" type="text" name="title">
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción</label>
+                <input id="description" class="form-control" type="text" name="description">
+            </div>
+            <div class="form-group">
+                <label for="category">Categoría</label>
+                <input id="category" class="form-control" type="text" name="category">
+            </div>
+            <div class="form-group">
+                <label for="price">Precio</label>
+                <input id="price" class="form-control" type="number" name="price">
+            </div>
+            <div class="form-group">
+                <label for="thumbnail">URL de Imagen</label>
+                <input id="thumbnail" class="form-control" type="url" name="thumbnail">
+            </div>
+            <div class="form-group">
+                <label for="code">Código</label>
+                <input id="code" class="form-control" type="text" name="code">
+            </div>
+            
+            <div class="form-group">
+                <label for="stock">Stock</label>
+                <input id="stock" class="form-control" type="number" name="stock">
+            </div>
+            
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+        <br>
+        <div class="col-12">
+            <div id="error-message" style="color: red;"></div>
+        </div>
+    <div id="productos">
+    {{#if newProduct.length}}
+        <h2>Menú</h2>
+        <div class="table-responsive" id="tableContainer">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">title</th>
+                <th scope="col">description</th>
+                <th scope="col">price</th>
+                <th scope="col">strock</th>
+              </tr>
+            </thead>
+            <tbody id="tabla">
+
+            </tbody>
+            <tbody id="tablaDos">
+
+            </tbody>
+          </table>
+        </div>
+        <div id="nav">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                    <a class="page-link" id="previousPageButton" {{#if hasPrevPage}} href="/api/views/realTimeProducts?page={{prevPage}}" {{/if}} >Anterior</a>
+                    </li>
+                    {{#each arr}}
+                    <li class="page-item"><a class="page-link" href="/api/views/realTimeProducts?query={{customQuery}}&page={{this}}&limit={{limitValue}}&sort={{sort}}">{{this}}</a></li>
+                    {{/each}}
+                    <li class="page-item">
+                    <a class="page-link" id="nextPageButton" {{#if hasNextPage}} href="/api/views/realTimeProducts?page={{nextPage}}" {{/if}}>Siguiente</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    {{else}}
+      <h3>No hay productos</h3>
+    {{/if}}              
+    </div>
+  </div>
+    
+</div>
+
+
+
+<script src="/js/main.js"></script>
+
+    

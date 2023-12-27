@@ -1,0 +1,18 @@
+<div>
+    Chat con WebSockets 
+</div>
+<div>
+<input id="chatBox"></input>
+</div>
+<div>
+    <p id="messageLogs"></p>
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/home.js"></script>
+
+<script>
+     const sockets=io.connect('http://localhost:3000/',
+    {forceNew:true});
+</script>

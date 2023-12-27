@@ -1,0 +1,128 @@
+<style>
+    .table td,
+    .table th {
+        vertical-align: middle;
+    }
+</style>
+
+
+
+<div class="container mt-2">
+    <div class="jumbotron">
+        <div >
+            <div>
+                {{!-- Mensaje de bienvenida a usuario de sesión --}}
+                {{!-- <h2>Bienvenido {{name}} {{lastname}}</h2>
+                <br>
+                <h3>Mail: {{email}}</h3>
+                <h3>Role: {{role}}</h3>
+                <h3>userId: {{id}}</h3>
+                <h3>Cart: {{cart}}</h3> --}}
+                <div class="user-info">
+                    <div>
+                        <h2><span>Bienvenido {{name}} {{lastname}}</span></h2>
+                    </div>
+                    <div>
+                        <h3>Mail: <span id="email">{{email}}</span></h3>
+                    </div>
+                    <div>
+                        <h3>Role: <span id="role">{{role}}</span></h3>
+                    </div>
+                    <div>
+                        <h3>userId: <span id="userId">{{id}}</span></h3>
+                    </div>
+                    <div>
+                        <h3>Cart: <span id="cart">{{cart}}</span></h3>
+                    </div>
+                </div>
+                <div><img width="100" src={{picture}} alt="not found"></div>
+            </div>
+            <br>
+            <br>
+            {{!-- Boton de logout --}}
+            <div id="logoutButton" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <button class="btn-group me-2" role="group" aria-label="First group" >Logout</button>
+            </div>
+        </div>
+        <!-- De acá tomo el id del carrito-->
+        <div>
+            <button id="carrito" name="cart" value="{{cart}}" onclick="purchase()">Comprar</button>
+        </div>
+        <div class="form_documents">
+    <div>
+        <h3>Subir archivos para:</h3>
+    </div>
+
+    <div>
+        <h4>Perfil</h4>
+        <form action="/api/users/{{id}}/documents?type=profile" method="POST" enctype="multipart/form-data">
+            <input type="file" name="documents" multiple>
+            <button type="submit">Subir archivo(s)</button>
+        </form>
+    </div>
+
+    <div>
+        <h4>Productos</h4>
+        <form action="/api/users/{{id}}/documents?type=product" method="POST" enctype="multipart/form-data">
+            <input type="file" name="documents" multiple>
+            <button type="submit">Subir archivo(s)</button>
+        </form>
+    </div>
+
+    <div>
+        <h4>Documentos</h4>
+        <form action="/api/users/{{id}}/documents?type=document" method="POST" enctype="multipart/form-data">
+            <input type="file" name="documents" multiple>
+            <button type="submit">Subir archivo(s)</button>
+        </form>
+    </div>
+</div>
+        <div id="productos">
+        {{#if listProducts.length}}
+        <h2>Menú</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+                {{#each listProducts}}
+                <tr>
+                    <td>{{this.title}}</td>
+                    <td>${{this.price}}</td>
+                    <td><img width="100" src={{this.thumbnail}} alt="not found"></td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btnAddtoCart me-2" role="group" aria-label="First group" onclick={addProductToCart("{{this.id}}")} >Agregar</button>
+                        <button class="btn btn-danger btn-sm btnDeleteFromCart" aria-label="First group" onclick={deleteProductFromCart("{{this.id}}")}>Eliminar</button>
+                    </td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                <a class="page-link" {{#if hasPrevPage}} href="/api/views/products?query={{customQuery}}&page={{prevPage}}&limit={{limitValue}}&sort={{sort}}" {{/if}}>Anterior</a>
+                </li>
+                {{#each arr}}
+                <li class="page-item"><a class="page-link" href="/api/views/products?query={{customQuery}}&page={{this}}&limit={{limitValue}}&sort={{sort}}">{{this}}</a></li>
+                {{/each}}
+                <li class="page-item">
+                <a class="page-link" {{#if hasNextPage}} href="/api/views/products?query={{customQuery}}&page={{nextPage}}&limit={{limitValue}}&sort={{sort}}" {{/if}}>Siguiente</a> 
+                </li>
+            </ul>
+        </nav>
+        {{else}}
+        <h3>No hay productos</h3>
+        {{/if}}
+        <div class="col-12">
+            <div id="error-message" style="color: red;"></div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="/js/logout.js"></script>
+<script src="/js/mainDos.js"></script>

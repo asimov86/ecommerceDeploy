@@ -1,0 +1,48 @@
+{{#if cartP}}
+<div style="display: none">
+    <input id="carrito" name="cart" type="hydden" value="{{idCart}}">
+</div>
+    <div>
+        <a id="carrito" class="btn btn-outline-primary btn-sm" href="/api/views/products" type="button"><i class="bi bi-box-arrow-in-left" ></i></a>
+    </div>
+    
+    <div class="" id="cart">
+        <h2>Lista de productos agregados al carrito.</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Image</th>
+                    <th></th>
+                </tr>
+                {{#each cartP}}
+                <tr>
+                    <td>{{this.product._id}}</td>
+                    <td>{{this.product.title}}</td>
+                    <td>${{this.product.price}}</td>
+                    <td>{{this.quantity}}</td>
+                    <td><img width="100" src={{this.product.thumbnail}} alt="not found"></td>
+                    <td><button class="btn-group me-2" role="group" aria-label="First group" onclick={deleteProductFromCart("{{this.product._id}}")} >Eliminar</button></td>
+                </tr>
+                {{/each}}
+                <tr>
+                    <th><button class="btn-group me-2" role="group" aria-label="First group" onclick={createTicket("{{idCart}}")} >Comprar</button></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+{{else}}
+    <div>
+        <div class="" id="cart">
+            <h3>No hay productos en el carrito.</h3>
+        </div>
+        <div>
+            <a id="carrito" class="btn btn-primary" href="/api/products/home" type="button"><i class="bi bi-arrow-left-square-fill"></i></a>
+        </div>
+    </div>
+    
+{{/if}}
+<script src="/js/main.js"></script>

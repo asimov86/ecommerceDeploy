@@ -1,0 +1,141 @@
+paths:
+  /api/products:
+    get:
+      summary: Obtener los datos de los productos
+      tags:
+        - products
+      responses:
+        "200":
+          description: los productos se mostraron correctamente desde la base de datos
+        "400":
+          description: error al intentar mostrar los productos
+    post:
+      summary: Crear un producto
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/products"
+            example:
+              title: PepsiCola Zero
+              description: Refresco de cola, marca Pepsi
+              category: comida
+              price: 790
+              thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0aIM6YAvZ69RxhfS_GAwSeKMpM3kn1CgfK_c1DXI3m2zZ9IPo9y8-X-JNw0rKHKkA8g&usqp=CAU
+              code: 2A32F3269
+              stock: 100
+              owner: 65459f9a4bec6c9c411b3e08
+        description: Caracteristicas del producto a agregar
+        required: true
+      tags:
+        - products
+      responses:
+        "200":
+          description: El producto se creo satisfactoriamente.
+        "500":
+          description: Error de servidor.
+  /api/products/{pid}:
+    get:
+      summary: Obtener los datos del producto
+      parameters:
+        - in: path
+          name: pid
+          description: ID del producto a buscar
+          required: true
+          schema:
+            type: string
+      tags:
+        - products
+      responses:
+        "200":
+          description: El producto se muestra correctamente desde la base de datos
+        "400":
+          description: error al intentar mostrar el producto
+    put:
+      summary: Actualizar producto por ID
+      parameters:
+        - in: path
+          name: pid
+          description: ID del producto a buscar
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+            example:
+              category: bebida
+      tags:
+        - products
+      responses:
+        "200":
+          description: El producto se actualizo satisfactoriamente.
+        "404":
+          description: Producto no encontrado.
+        "500":
+          description: Error de servidor.
+    delete:
+      summary: Eliminar producto por ID
+      parameters:
+        - in: path
+          name: pid
+          description: ID del producto a buscar
+          required: true
+          schema:
+            type: string
+      tags:
+        - products
+      responses:
+        "200":
+          description: El producto se elimino satisfactoriamente.
+        "404":
+          description: Producto no encontrado.
+        "500":
+          description: Error de servidor.
+components:
+  schemas:
+    products:
+      type: object
+      properties:
+        _id: 
+          type: ObjectId
+          description: ID autogenerado por mongo que identifica al producto en la base de datos
+        title:
+          type: String
+          description: Nombre del producto
+        description: 
+          type: String
+          description: Breve descripción del producto
+        category:
+          type: String
+          description: Tipo de producto o categoría a la que pertenece el producto
+        price: 
+          type: Number
+          description: Valor de compra del producto
+        thumbnail: 
+          type: String
+          description: Ruta a la imágen de cada producto
+        code: 
+          type: String
+          description: Código que identifica al producto
+        stock:
+          type: Number
+          description: Número de unidades disponibles del producto
+        owner: 
+          type: ObjectId
+          description: Id del usuario que ingresó el producto en el sistema
+        createTimestamp:
+          type: DateTime
+      example:
+        _id: 63e2b690a965030d2a43e3a7
+        title: Pepsi
+        description: Refresco de cola, marca Pepsi
+        category: bebida
+        price: 760
+        thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0aIM6YAvZ69RxhfS_GAwSeKMpM3kn1CgfK_c1DXI3m2zZ9IPo9y8-X-JNw0rKHKkA8g&usqp=CAU
+        code: 2A32F3268
+        stock: 100
+        owner: 63f6533d456dd2b113a4178d
+        createTimestamp: 2023-12-10T16:45:46.473+00:00

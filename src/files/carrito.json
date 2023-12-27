@@ -1,0 +1,17 @@
+[
+  {
+    "id": "f9f30c73-2f07-420f-9930-696e038e23aa",
+    "timestamp": "8/21/2023, 1:25:34 PM",
+    "productos": []
+  },
+  {
+    "id": "96e597ef-3f3d-4eb3-a4b8-c548bc0ae6e7",
+    "timestamp": "8/21/2023, 1:50:17 PM",
+    "productos": []
+  },
+  {
+    "id": "4a9c5ad4-d07a-4bf2-b32f-83e13db9a471",
+    "timestamp": "8/21/2023, 1:54:16 PM",
+    "productos": [{ "product": 5, "quantity": 2 }]
+  }
+]
