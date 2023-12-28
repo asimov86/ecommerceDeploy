@@ -39,20 +39,15 @@ const update = async (newProductInfo, itemId) => {
     }
 }
 
-//const deleteById = async (itemId, userValue) => {
-const deleteById = async (itemId) => {
+const deleteById = async (itemId, userValue) => {
     try {
-        //const user = await User.getUserByID(userValue);
+        const user = await User.getUserByID(userValue);
         // Para la prueba de la Documentación de la API elimino la parte de permisos
         const prod = await Products.getById(itemId);
-       /*  console.log(prod);
         let prodOwner = prod.owner;
-        console.log(prodOwner)
         const roleUserId = user.role.toString();
         const roleUser= await Role.getRoleByID(roleUserId); //
-        console.log(roleUser)
         const roleUserName = roleUser.roleName;
-        console.log(roleUserName)
         if(roleUserName !== 'admin'){
             if(prodOwner == null ){
                 //Para evitar un error, verifico por si algún producto no tiene owner. Así sólo lo borra un admin.
@@ -66,7 +61,7 @@ const deleteById = async (itemId) => {
                 error.code = 15002; // Asignar un código al error
                 throw error;        
             }
-        } */
+        }
         return Products.deleteById(itemId);
     } catch (error) {
         throw error;

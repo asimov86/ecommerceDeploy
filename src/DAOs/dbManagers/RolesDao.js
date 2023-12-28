@@ -3,13 +3,21 @@ const Roles = require('../models/mongo/role.model');
 
 class Role{
     async findById(uid) {
-        const role = await Roles.findOne({ _id: uid});
-        return role;
+        try {
+            const role = await Roles.findOne({ _id: uid});
+            return role;
+        } catch (error) {
+            throw error;
+        }
     }
 
     async findByName(name) {
-        const roleName = await Roles.findOne({roleName: name});
-        return roleName;
+        try {
+            const roleName = await Roles.findOne({roleName: name});
+            return roleName;
+        } catch (error) {
+            throw error;
+        }
     }
 }
 

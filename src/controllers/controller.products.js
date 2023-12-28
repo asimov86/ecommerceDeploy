@@ -1,5 +1,5 @@
 const {Router} = require('express');
-//const authorizationMiddleware = require('../middleware/authorization.js');
+const authorizationMiddleware = require('../middleware/authorization.js');
 const {isAdmin, isPremium} = require('../middleware/authorization.js');
 //const ProductsDao = require('../DAOs/dbManagers/ProductsDao');
 const productsService = require('../services/service.products.js');
@@ -25,15 +25,21 @@ router.get('/', async (req, res) => {
     res.json({messages: products});
 }) 
 
-router.get('/:pid', async (req, res) => {
-    const user = req.params.user;
-    const pid = req.params.pid;
-    const prod = await productsService.getById(pid);
-    req.logger.info(prod)
-    res.json({messages: prod});
+router.get('/:pid', authorizationMiddleware.isUser, async (req, res) => {
+    try {
+        const user = req.params.user;
+        const pid = req.params.pid;
+        const prod = await productsService.getById(pid);
+        req.logger.info(prod)
+        res.json({messages: prod});
+    } catch (error) {
+        console.log(error);
+        req.logger.error('Otro tipo de error:', error.message);
+        return res.status(500).json({ status: 'error', error: 'Error interno del servidor' });
+    }
 });
 
-router.post('/', async (req, res) => {
+router.post('/', authToken, isAdmin, async (req, res) => {
     try {
         const { title, description, category, price, thumbnail, code, stock } = req.body;
         //req.logger.info(req)
@@ -55,7 +61,7 @@ router.post('/', async (req, res) => {
     
 });
 
-router.put('/:pid', async (req, res) => {
+router.put('/:pid', authToken, isAdmin, async (req, res) => {
     try {
         const { title, description, category, price, thumbnail, code, stock } = req.body;
         const lowerCategoryProduct = category.toLowerCase();
@@ -77,7 +83,7 @@ router.put('/:pid', async (req, res) => {
 
 })
 
-router.delete('/:pid', async (req, res) => {
+router.delete('/:pid', authToken, isAdmin, async (req, res) => {
     try {
         const itemId = req.params.pid;
         //console.log(req.params.user)

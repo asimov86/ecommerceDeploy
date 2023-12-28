@@ -66,7 +66,6 @@ router.get('/confirm/:token', async (req, res) => {
 router.get('/passwordChanged/:token', async (req, res) => {
     try {
         //obtener token
-        console.log("Estoy acá")
         const { token} = req.params;
         let data = await getTokenData(token);
         //verificar la data
@@ -88,6 +87,7 @@ router.get('/passwordChanged/:token', async (req, res) => {
         return res.redirect('/api/views/resetPasswordDos');
     } catch (error) {
       req.logger.error(error);
+      return res.status(500).json({ status: 'error', error: 'Error interno del servidor' });
     }
   
   });

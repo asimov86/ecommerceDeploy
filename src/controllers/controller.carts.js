@@ -79,7 +79,7 @@ router.post('/:cid/products/:pid', async (req, res) => {
     }
 });
 
-router.put('/:cid', async(req, res) =>{
+router.put('/:cid', verifyJwt, isUser, async(req, res) =>{
     try {
         let idC = req.params.cid;
         const items = req.body;
@@ -98,7 +98,7 @@ router.put('/:cid', async(req, res) =>{
 });
 
 
-router.put('/:cid/products/:pid', async(req, res) =>{
+router.put('/:cid/products/:pid', verifyJwt, isUser, async(req, res) =>{
     try {
         let idC = req.params.cid;
         let idP = req.params.pid;
@@ -121,7 +121,7 @@ router.put('/:cid/products/:pid', async(req, res) =>{
     
 });
 
-router.delete('/:cid', async(req, res) =>{
+router.delete('/:cid', verifyJwt, isUser, async(req, res) =>{
     try {
         let idC = req.params.cid;
         const car = await cartsService.deleteProducts(idC);
@@ -142,7 +142,7 @@ router.delete('/:cid', async(req, res) =>{
     }
 });
 
-router.delete('/:cid/products/:pid', async(req, res) =>{
+router.delete('/:cid/products/:pid', verifyJwt, isUser, async(req, res) =>{
     try {
         let idC = req.params.cid;
         let idP = req.params.pid;
@@ -164,7 +164,7 @@ router.delete('/:cid/products/:pid', async(req, res) =>{
     }
 });
 
-router.post('/:cid/purchase', async (req, res) => {
+router.post('/:cid/purchase', verifyJwt, isUser, async (req, res) => {
     try {
         let idC = req.params.cid;
         const ticket = await ticketsService.createTicket(idC);

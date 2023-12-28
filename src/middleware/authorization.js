@@ -9,6 +9,7 @@ const isAdmin = async (req, res, next) => {
     const userDetails = await user.getUserByID(userId);
     const roleId = userDetails.role;
     const userRole = await roles.getRoleByID(roleId);
+    if (userRole === null) {return res.status(403).json({ error: 'Acceso denegado' });}
     if (userRole.roleName === 'admin') {
       req.logger.info(`Verified token. (isAdmin)`);
       return next(); // Permitir acceso al siguiente middleware o controlador
@@ -27,6 +28,7 @@ const isUser = async (req, res, next) => {
     const userId = userInfo._id.toString();
     const roleId = userInfo.role;
     const userRole = await roles.getRoleByID(roleId);
+    if (userRole === null) {return res.status(403).json({ error: 'Acceso denegado' });}
     if (userRole.roleName === 'user') {
       req.logger.info(`Verified token. (isUser)`);
       return next();
@@ -40,6 +42,7 @@ const isPremiumOrAdmin = async (req, res, next) => {
     const userDetails = await user.getUserByID(userId);
     const roleId = userDetails.role;
     const userRole = await roles.getRoleByID(roleId);
+    if (userRole === null) {return res.status(403).json({ error: 'Acceso denegado' });}
     if (userRole.roleName === 'premium') {
       req.logger.info(`Verified token. (isPremium)`);
       return next();
@@ -57,6 +60,7 @@ const isPremiumOrAdmin = async (req, res, next) => {
     const userDetails = await user.getUserByID(userId);
     const roleId = userDetails.role;
     const userRole = await roles.getRoleByID(roleId);
+    if (userRole === null) {return res.status(403).json({ error: 'Acceso denegado' });}
     if (userRole.roleName === 'premium') {
       req.logger.info(`Verified token. (isPremium)`);
       return next();

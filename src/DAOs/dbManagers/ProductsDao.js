@@ -17,7 +17,7 @@ class ProductsDao {
             
             // return await Products.paginate({limit: Number(limit), page: Number(page)})
         }catch(error){
-            return ("Products not found.");
+            throw error;
         }     
     }
 
@@ -25,12 +25,13 @@ class ProductsDao {
         try{
             const prod = await Products.findById({_id:pid});
             if(!prod) {
-                this.logger.info("Product not found.");
-                return "Product not found.";
+                const error = new Error("Product not found.");
+                error.code = 12002; // Asignar un código al error
+                throw error;
             }
             return prod
         }catch(error){
-            return ("Product not found.");
+            throw error;
         } 
     };
 
@@ -63,24 +64,6 @@ class ProductsDao {
                 error.code = 13004; // Asignar un código al error
                 throw error;
             }
-            /* if(existProduct && existProduct.length > 0){
-                const prod = await Products.updateOne(
-                    {_id: itemId}, 
-                    {$set:{
-                        title:title, 
-                        description:description, 
-                        category:category, 
-                        price:price, 
-                        thumbnail:thumbnail, 
-                        code:code, 
-                        stock:stock,
-                        modifyTimestamp:modifyTimestamp}
-                    }
-                );
-                return prod 
-            }  else {
-                throw new Error("Product not found");
-            } */
             let modifyTimestamp = new Date();
             const prod = await Products.updateOne(
                 {_id: itemId}, 
